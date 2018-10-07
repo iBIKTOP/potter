@@ -1,0 +1,12 @@
+<div *ngIf="houses">
+  <p class="h4">Список факультетов:</p>
+  <nav>
+    <ul>
+      <li *ngFor="let house of houses">
+        <a routerLink="/characters/{{ house.name }}">{{ house.name }}</a>
+      </li>
+    </ul>
+  </nav>
+
+</div>
+

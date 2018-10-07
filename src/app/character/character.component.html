@@ -1,0 +1,9 @@
+<div *ngIf="character">
+  <p class="h4">
+    Данные студента {{name}}:
+  </p>
+  <div style="border-bottom: 1px solid black" *ngFor="let key of objectKeys(character)">
+    <span class="h6">{{key}}:</span><span class="h5"> {{character[key]}}</span>
+  </div>
+  <button (click)="goBack()" class="btn btn-secondary mt-3">Назад</button>
+</div>

@@ -1,0 +1,12 @@
+<div *ngIf="characters">
+  <p class="h4">
+    Список учащихся факультета {{house}}:
+  </p>
+  <ul>
+    <li *ngFor="let character of characters">
+      <a routerLink="/character/{{character._id}}">{{ character.name }}</a>
+    </li>
+  </ul>
+
+</div>
+
